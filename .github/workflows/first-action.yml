@@ -6,6 +6,12 @@ jobs:
     steps:
       - name: Print Greeting
         run: echo "Hello, World!"
+      - name: Validations
+        run: |
+            cat /etc/os-release
+            cat /etc/hostname
+            pwd
+            echo "Seems OK! :D"
       - name: Print Goodbye
         run: echo "Done - Goodbye!"
       
